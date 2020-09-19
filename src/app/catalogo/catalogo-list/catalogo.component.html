@@ -1,0 +1,23 @@
+<div class="container mt-4">
+    <h1>Catalogo</h1>
+    <hr />
+  
+    <!-- Listado de productos: -->
+  
+    <div class="card-columns">
+      <div class="card" *ngFor="let producto of productos; let i = index">
+        <img class="card-img-top" [src]="producto.img" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card-title">{{ producto.nombre }}</h5>
+          <p class="card-text">{{ items[i]?.body }}</p>
+          <a
+            routerLink="/detalle/{{ producto.id }}"
+            routerLinkActive="router-link-active"
+            class="btn btn-primary"
+            >Ver más..</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  

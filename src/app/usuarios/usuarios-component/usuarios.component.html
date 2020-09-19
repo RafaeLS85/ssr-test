@@ -1,0 +1,15 @@
+<div class="container mt-4">
+    <h1>Usuarios</h1>
+    <hr />
+  
+    <!-- Listado de usuarios: -->   
+  
+    <div *ngFor="let usuario of usuarios; index as i">
+  
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{usuario | json}} </li>      
+      </ul>
+    </div>
+  
+  </div>
+  

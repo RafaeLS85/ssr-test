@@ -1,0 +1,16 @@
+<div class="container mt-4">
+  <h1>{{ productos[id - 1].nombre }}</h1>
+  <hr />
+  <img
+    src="{{ productos[id - 1].img }}"
+    style="width: 650px; height: 500px;"
+    alt=""
+  />
+
+  <h4>Categoria</h4>
+  <p>{{ productos[id - 1].categoria }}</p>
+  <h4>Detalle</h4>
+  <p>{{ items[id - 1]?.body }}</p>
+  <h4>Precio</h4>
+  <p>${{ productos[id - 1].precio }}</p>
+</div>
